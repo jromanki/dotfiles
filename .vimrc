@@ -1,3 +1,4 @@
+set mouse=a
 " Disable compatibility with vi which can cause unexpected issues.
 set nocompatible
 
@@ -78,6 +79,7 @@ set showmode
 "Shows partial commands in the last line of the screen
 set showcmd
 
+set timeoutlen=300 ttimeoutlen=10
 
 " Optionally, customize the content of the status line
 function! GitBranch()

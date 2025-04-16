@@ -42,3 +42,8 @@ Example output:
 lrwxrwxrwx 1 user user 27 Jul  8 12:34 /home/user/.bashrc -> /home/user/dotfiles/.bashrc
 
 This shows that ~/.bashrc is a symlink that points to ~/dotfiles/.bashrc.
+
+# if .bashrc not empty add to existing .bashrc and make symboliclink to dotfiles/.bashrc as .bashrc.gitadditions
+if [ -f "$HOME/.bashrc.gitadditions" ]; then
+    source "$HOME/.bashrc.gitadditions"
+fi
