@@ -1,3 +1,8 @@
+# Run tmux automatically
+if command -v tmux >/dev/null 2>&1; then
+  [ -z "$TMUX" ] && exec tmux
+fi
+
 # tat: tmux attach
 function tat {
   name=$(basename `pwd` | sed -e 's/\.//g')
