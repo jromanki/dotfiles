@@ -8,8 +8,8 @@
 #]
 
 [shell]
-program               = "/usr/bin/bash"
-args                  = [ "--login", ]
+program               = "/usr/bin/tmux"
+# args                  = [ "--login", ]
 
 #working_directory     = "None"
 #live_config_reload    = true
@@ -54,13 +54,14 @@ glyph_offset          = { x = 0, y = 0 }
 # Default colors
 [colors.primary]
 # hard contrast background = = '#1d2021'
-background = '#282828'
+background = '#1d2021'
+# background = '#282828'
 # soft contrast background = = '#32302f'
 foreground = '#ebdbb2'
 
 # Normal colors
 [colors.normal]
-black   = '#282828'
+black   = '#1d2021'
 red     = '#cc241d'
 green   = '#98971a'
 yellow  = '#d79921'
